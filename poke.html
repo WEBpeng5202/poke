@@ -30,18 +30,54 @@
             width: 110px;
             height: 160px;
             position: absolute;
-            left: 0;
+            left: 740px;
             /*top:0;*/
             opacity: 0;
             border-radius: 6px;
             background-size: cover;
             background-position: center;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+        }
+        .active{
+            border: 2px solid #00fcff;
+        }
+        button{
+            width: 80px;
+            height: 40px;
+            border: none;
+            background-color: #5bc0de;
+            color: #f7f7f7;
+        }
+        .leftBtn{
+            position: absolute;
+            bottom:100px;
+            left: 740px;
+        }
+        .rightBtn{
+            position: absolute;
+            bottom:100px;
+            left: 860px;
+        }
+        .pokeBox {
+            width: 200px;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 180px;
         }
     </style>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/poke.js"></script>
 </head>
 <body>
-<div class="table"></div>
+<div class="table">
+    <button class="leftBtn"> 上一张 </button>
+    <button class="rightBtn">下一张</button>
+    <div class="pokeBoxLeft">
+
+    </div>
+    <div class="pokeBoxRight"></div>
+</div>
 </body>
 </html>
